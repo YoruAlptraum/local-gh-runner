@@ -4,6 +4,6 @@ services:
     container_name: local-github-runner
     environment:
       REPO_URL: ${REPO_URL}
-      RUNNER_TOKEN: ${RUNNER_TOKEN}
+      ACCESS_TOKEN: ${GITHUB_PAT}
       RUNNER_NAME: ${RUNNER_NAME}
     restart: unless-stopped
