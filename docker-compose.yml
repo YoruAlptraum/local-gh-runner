@@ -1,0 +1,9 @@
+services:
+  github-runner:
+    image: myoung34/github-runner
+    container_name: local-github-runner
+    environment:
+      REPO_URL: ${REPO_URL}
+      RUNNER_TOKEN: ${RUNNER_TOKEN}
+      RUNNER_NAME: ${RUNNER_NAME}
+    restart: unless-stopped
