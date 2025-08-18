@@ -7,3 +7,5 @@ services:
       ACCESS_TOKEN: ${GITHUB_PAT}
       RUNNER_NAME: ${RUNNER_NAME}
     restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
